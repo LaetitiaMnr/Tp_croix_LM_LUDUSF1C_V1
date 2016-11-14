@@ -18,5 +18,6 @@ DEBUT
 				ECRIRE(c)
 			SINON
 				ECRIRE(' ')
-		ECRIRE
+		FINPOUR
+	FINPOUR
 FIN
