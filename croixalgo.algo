@@ -1,0 +1,22 @@
+//ALGO: croix
+//BUT: faire un algo qui demande un caractère à l'utilisateur qui créera une croix et sa taille
+//ENTREE: le caractère, la taille
+//SORTIE: une croix
+
+VAR
+	c : CARACTERE
+	taille : ENTIER
+
+DEBUT
+	ECRIRE('Entrez un caractère')
+	LIRE caractère
+	ECRIRE('Entrez la taille')
+	LIRE taille
+	POUR i <- 1 A taille FAIRE 
+		POUR j <- 1 A taille FAIRE
+			SI i=j OU i+j=taille+1 ALORS //pour pouvoir afficher un bras de la croix il faut afficher 'c' quand i=j. On fait i+j=taille+1 pour afficher l'autre bras
+				ECRIRE(c)
+			SINON
+				ECRIRE(' ')
+		ECRIRE
+FIN
